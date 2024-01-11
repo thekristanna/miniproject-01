@@ -1,0 +1,118 @@
+/* Universal: Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: var(--color-one);
+}
+/* Universal: End */
+
+/* Root: Start */
+:root {
+  /* Colors */
+  --color-one: #ffffff;
+  --color-two: #ff90bc;
+  --color-three: #8acdd7;
+  /* Fonts Styles */
+  --font-size-biggest: 48px;
+  --font-size-bigger: 30px;
+  --font-size-big: 24px;
+  --font-size-normal: 16px; /* 1 rem*/
+  --font-size-small: 12px;
+  --font-size-smaller: 10px;
+  --font-size-smallest: 8px;
+  --font-weight-thin: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 800;
+}
+/* Root: End */
+
+/* Body: Start */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-two);
+}
+/* Body: End */
+
+/* Content: Start */
+.login-form {
+  position: relative;
+  width: 300px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: var(--font-size-biggest);
+}
+input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--color-one);
+  border-radius: 10px;
+  font-size: var(--font-size-normal);
+}
+span {
+  position: absolute;
+  left: 0;
+  padding: 15px 20px;
+  pointer-events: none;
+  font-size: var(--font-size-normal);
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+input:is(:focus, :valid) ~ span {
+  padding: 0 5px;
+  background: var(--color-three);
+  border-radius: 2px;
+  font-size: var(--font-size-smaller);
+  transform: translateX(20px) translateY(-6px);
+}
+#toggle {
+  position: absolute;
+  top: 62%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: url(../img/view.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#toggle.hide {
+  background: url(../img/hide.png);
+  background-size: cover;
+}
+.username {
+  margin-bottom: 30px;
+}
+.login {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: var(--color-one);
+  border-radius: 10px;
+  font-size: var(--font-size-normal);
+  color: var(--color-two);
+  cursor: pointer;
+}
+.login:hover {
+  background: var(--color-three);
+  color: var(--color-one);
+  transition: 0.3s;
+}
+.forgot {
+  margin: 20px;
+  text-align: center;
+  font-size: var(--font-size-smaller);
+  font-style: italic;
+}
+/* Content: End */

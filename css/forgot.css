@@ -1,0 +1,68 @@
+/* Universal: Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: var(--color-one);
+}
+/* Universal: End */
+
+/* Root: Start */
+:root {
+  /* Colors */
+  --color-one: #ffffff;
+  --color-two: #ff90bc;
+  --color-three: #8acdd7;
+  /* Fonts Styles */
+  --font-size-biggest: 48px;
+  --font-size-bigger: 30px;
+  --font-size-big: 24px;
+  --font-size-normal: 16px; /* 1 rem*/
+  --font-size-small: 12px;
+  --font-size-smaller: 10px;
+  --font-size-smallest: 8px;
+  --font-weight-thin: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 800;
+}
+/* Root: End */
+
+/* Body: Start */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-two);
+}
+/* Body: End */
+
+/* Content: Start */
+.forgot {
+  text-align: center;
+}
+.username,
+.password {
+  margin: 30px 0 50px;
+}
+h1 {
+  font-size: var(--font-size-normal);
+}
+p {
+  font-size: var(--font-size-big);
+}
+.login {
+  margin: 15px 75px;
+  padding: 12px;
+  background: var(--color-three);
+  border-radius: 15px;
+  font-size: var(--font-size-small);
+}
+.login:hover {
+  color: var(--color-three);
+  background: var(--color-one);
+  transition: 0.3s;
+}
+/* Content: End */
